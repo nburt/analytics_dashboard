@@ -1,0 +1,22 @@
+# CLIENT
+
+.DS_Store
+
+#ignore node_modules, as the node project is not "deployed" per se: http://www.mikealrogers.com/posts/nodemodules-in-git.html
+client/node_modules
+
+client/dist
+client/generated
+
+*.sass-cache*
+
+# SERVER
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+server/log/*.log
+server/tmp
+server/.env
+server/config/*.p12

@@ -1,0 +1,65 @@
+.outer-container {
+  @include outer-container;
+}
+
+body {
+  background: $background-black;
+}
+
+h1 {
+  color: $white;
+  text-align: center;
+}
+
+.dashboard-element {
+  @include span-columns(4);
+  opacity: 0.85;
+  color: $background-black;
+  border-radius: 3px;
+  min-height: 280px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.blue {
+    background: $blue;
+  }
+
+  &.orange {
+    background: $orange;
+  }
+
+  &.green {
+    background: $green;
+  }
+
+}
+
+.element-header {
+  text-align: center;
+  padding-top: .5em;
+
+  h2 {
+    margin: 0;
+  }
+
+}
+
+.element-body {
+
+  h3 {
+    text-align: center;
+    margin: 0;
+  }
+
+  table {
+    border: none;
+    background: transparent;
+    margin: .75em;
+
+    tr {
+      background: transparent;
+    }
+  }
+}

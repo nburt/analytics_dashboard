@@ -463,7 +463,7 @@ function $RouteProvider(){
      * Check if the route matches the current url.
      *
      * Inspired by match in
-     * visionmedia/express/lib/router/router.js.coffee.
+     * visionmedia/express/lib/router/router.coffee.
      */
     function switchRouteMatcher(on, route) {
       var keys = route.keys,
