@@ -20,3 +20,4 @@ server/log/*.log
 server/tmp
 server/.env
 server/config/*.p12
+openssl

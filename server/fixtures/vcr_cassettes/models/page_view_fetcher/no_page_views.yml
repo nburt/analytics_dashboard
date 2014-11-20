@@ -5,7 +5,7 @@ http_interactions:
     uri: https://accounts.google.com/o/oauth2/token
     body:
       encoding: ASCII-8BIT
-      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIyMDEwODM4NDU3MDAtN2Rxa3ZqcjRkbm1pMDNnZmQ0NTFwY25mMnIwNHJkcDNAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYW5hbHl0aWNzLnJlYWRvbmx5IiwiYXVkIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL3Rva2VuIiwiZXhwIjoxNDE2NDYwMTgzLCJpYXQiOjE0MTY0NjAwNjN9.LpF_tkFiIdjAA6ZuwUZmo-oMqpAXq4KwWNQF1WppGAPyqu5H00ugqPGs0ZUNILZcddD9MS_NGn866nwhnLgHU1-rt62geDMs949ozTEdhdY1-CJl5bSRfD2uVY0-lvWWpop6QIMH1VooAVrZxyI9K_PvVzZd0id9PKzrR0mu5ac
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIyMDEwODM4NDU3MDAtN2Rxa3ZqcjRkbm1pMDNnZmQ0NTFwY25mMnIwNHJkcDNAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYW5hbHl0aWNzLnJlYWRvbmx5IiwiYXVkIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL3Rva2VuIiwiZXhwIjoxNDE2NDYwMDMwLCJpYXQiOjE0MTY0NTk5MTB9.CGExZ7bc5fjg0uxOPyc8NWkbeem-CAUo1fQDyf1wIP7O8KeEFgSgBmZmVQBIAGA2YTEL9i0_yAQfLGbbyas78ph-g2J2TC28R7wd3djz-Thb7zm9XuhOovil_5J6SVqEzb8pQcKLSYF09Ce3sohnrQIa7CqBCAoT9xKuaq6PPKc
     headers:
       Cache-Control:
       - no-store
@@ -31,7 +31,7 @@ http_interactions:
       Expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       Date:
-      - Thu, 20 Nov 2014 05:08:43 GMT
+      - Thu, 20 Nov 2014 05:06:11 GMT
       Content-Disposition:
       - attachment; filename="json.txt"; filename*=UTF-8''json.txt
       X-Content-Type-Options:
@@ -50,12 +50,12 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "access_token" : "ya29.xABGEnbtKbKvi8FbRYvlAD8L8iZd6w-LChDYXMuGCLR-9MlmPS7Bt-kBNbnBtHmv_B7O9hlRGoAoag",
+          "access_token" : "ya29.xACA326NNqT5bgh9Ere9I5zdyMZJXW8YKB0g8RI4ICdY5TI2klsseuSfXHp6q7IX50NPf8YZ-N9HSw",
           "token_type" : "Bearer",
           "expires_in" : 3600
         }
     http_version: 
-  recorded_at: Thu, 20 Nov 2014 05:08:43 GMT
+  recorded_at: Thu, 20 Nov 2014 05:06:11 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/analytics/v3/rest
@@ -79,9 +79,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 20 Nov 2014 05:13:43 GMT
+      - Thu, 20 Nov 2014 05:11:11 GMT
       Date:
-      - Thu, 20 Nov 2014 05:08:43 GMT
+      - Thu, 20 Nov 2014 05:06:11 GMT
       Cache-Control:
       - public, max-age=300, must-revalidate, no-transform
       Etag:
@@ -544,7 +544,7 @@ http_interactions:
         2VY1ZdMLEE9scJbWINlElZi1b4fZ8aSvgE8oyG54FYs0+gvpWKhOU7aGsdOU
         Y3ODJWKd/h7ZzBfw/7cX/x/uK/GT5SsDAA==
     http_version: 
-  recorded_at: Thu, 20 Nov 2014 05:08:44 GMT
+  recorded_at: Thu, 20 Nov 2014 05:06:12 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=2014-11-19&ids=ga:83626939&metrics=ga:pageviews&start-date=2014-10-21
@@ -561,7 +561,7 @@ http_interactions:
       Content-Type:
       - ''
       Authorization:
-      - Bearer ya29.xABGEnbtKbKvi8FbRYvlAD8L8iZd6w-LChDYXMuGCLR-9MlmPS7Bt-kBNbnBtHmv_B7O9hlRGoAoag
+      - Bearer ya29.xACA326NNqT5bgh9Ere9I5zdyMZJXW8YKB0g8RI4ICdY5TI2klsseuSfXHp6q7IX50NPf8YZ-N9HSw
       Cache-Control:
       - no-store
       Accept:
@@ -572,9 +572,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 20 Nov 2014 05:08:44 GMT
+      - Thu, 20 Nov 2014 05:06:12 GMT
       Date:
-      - Thu, 20 Nov 2014 05:08:44 GMT
+      - Thu, 20 Nov 2014 05:06:12 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -616,5 +616,5 @@ http_interactions:
         bdk1pJscrSPVsK9aI8/BOorwP1YrX86SMteGm3q1J/plQ6+0cbmWQnfz+v+u
         xK4PB4UNfJZmrufXf5Mes+HrBAAA
     http_version: 
-  recorded_at: Thu, 20 Nov 2014 05:08:44 GMT
+  recorded_at: Thu, 20 Nov 2014 05:06:12 GMT
 recorded_with: VCR 2.9.3

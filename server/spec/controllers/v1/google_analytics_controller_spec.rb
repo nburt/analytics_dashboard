@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe V1::GoogleAnalyticsController, vcr: {match_requests_on: [:method,
-  VCR.request_matchers.uri_without_params('end-date', 'start-date')]} do
+describe V1::GoogleAnalyticsController, vcr: {
+  match_requests_on: [:method, VCR.request_matchers.uri_without_params('end-date', 'start-date', 'ids')]} do
 
   it 'can fetch page views' do
     VCR.use_cassette('/controllers/v1/page_views') do
