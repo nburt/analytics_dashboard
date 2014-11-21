@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.google.com/o/oauth2/token
+    body:
+      encoding: ASCII-8BIT
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIyMDEwODM4NDU3MDAtN2Rxa3ZqcjRkbm1pMDNnZmQ0NTFwY25mMnIwNHJkcDNAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYW5hbHl0aWNzLnJlYWRvbmx5IiwiYXVkIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL3Rva2VuIiwiZXhwIjoxNDE2NTQ3MzI0LCJpYXQiOjE0MTY1NDcyMDR9.Lv-152Zoc7r3quwCCVKuwg5-8l9evXXDBjTJXpAFee8zvFipumafo9YeYJUXUxWWXbRdZ1Sy0vS1UN8kVZ3MsxAoqz9yrCX4fne2lKnB9tXsIQ8fIkdid1KFOj-ngXCdrTTsTMIhDFtvdU6WkMrlPo3o18gOrFzb0wn7HxBqV68
+    headers:
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Date:
+      - Fri, 21 Nov 2014 05:21:05 GMT
+      Content-Disposition:
+      - attachment; filename="json.txt"; filename*=UTF-8''json.txt
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.02
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "access_token" : "ya29.xQAnBm5eOwj2AhGyw_eyb0FkO3aqlrQgEMy6SOCagbCSFOwB5ZivfB9lGWj9oagkptj-fNNiLgMnPg",
+          "token_type" : "Bearer",
+          "expires_in" : 3600
+        }
+    http_version: 
+  recorded_at: Fri, 21 Nov 2014 05:21:04 GMT
+recorded_with: VCR 2.9.3

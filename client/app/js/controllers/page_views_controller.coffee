@@ -1,4 +1,4 @@
-angular.module("app").controller "PageViewController", ($scope, $http) ->
+angular.module("app").controller "PageViewsController", ($scope, $http) ->
   $scope.fetchPageViews = ->
     $http.get(
       "/v1/google_analytics/page_views"

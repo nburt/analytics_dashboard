@@ -11,5 +11,10 @@ module V1
       render json: session, status: 200
     end
 
+    def bounce_rates
+      bounce_rate = AnalyticsFetcher.bounce_rate
+      render json: bounce_rate, status: 200
+    end
+
   end
 end

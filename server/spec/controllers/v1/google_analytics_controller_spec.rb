@@ -32,4 +32,19 @@ describe V1::GoogleAnalyticsController do
     end
   end
 
+  it 'can fetch bounce_rate information' do
+    VCR.use_cassette('/controllers/v1/google_analytics/bounce_rates', match_requests_on: [:host, :path, :method]) do
+      get :bounce_rates
+
+      parsed_body = Oj.load(response.body)
+
+      bounce = BounceRate.last
+      expect(bounce.response).to eq(parsed_body['response'])
+
+      expect(response.status).to eq(200)
+      expect(bounce.response['query']['metrics']).to eq(['ga:bounceRate'])
+      expect(parsed_body['response']['totalsForAllResults']['ga:bounceRate']).to_not eq(nil)
+    end
+  end
+
 end

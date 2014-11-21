@@ -22,4 +22,15 @@ class AnalyticsFetcher
     end
   end
 
+  def self.bounce_rate
+    bounce_rate = BounceRate.last
+
+    if bounce_rate && bounce_rate.created_at > 3.hours.ago
+      bounce_rate
+    else
+      bounce_rate = V1::GoogleAnalyticsApi::BounceRates.new
+      bounce_rate.fetch_bounce_rates
+    end
+  end
+
 end

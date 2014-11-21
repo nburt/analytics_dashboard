@@ -1,4 +1,4 @@
-angular.module("app").controller "SessionController", ($scope, $http) ->
+angular.module("app").controller "SessionsController", ($scope, $http) ->
   $scope.fetchSessions = ->
     $http.get(
       "/v1/google_analytics/sessions"

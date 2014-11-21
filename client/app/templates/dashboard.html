@@ -1,5 +1,5 @@
 <h1>Analytics Dashboard</h1>
-<div class="dashboard-element blue" ng-controller="PageViewController"
+<div class="dashboard-element blue" ng-controller="PageViewsController"
      ng-init="fetchPageViews()">
   <div class="element-header">
     <h2>Page Views</h2>
@@ -17,7 +17,7 @@
   </div>
 </div>
 
-<div class="dashboard-element green" ng-controller="SessionController"
+<div class="dashboard-element green" ng-controller="SessionsController"
      ng-init="fetchSessions()">
   <div class="element-header">
     <h2>Sessions</h2>
@@ -29,6 +29,24 @@
       <tr ng-repeat="row in sortedSessions()">
         <td>{{row[0]}}</td>
         <td>{{row[1]}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="dashboard-element orange" ng-controller="BounceRatesController"
+     ng-init="fetchBounceRates()">
+  <div class="element-header">
+    <h2>Bounce Rate</h2>
+  </div>
+  <div class="element-body">
+    <h3>{{bounceRates.totalsForAllResults["ga:bounceRate"] | number:2}} %</h3>
+    <table>
+      <tbody>
+      <tr ng-repeat="row in sortedBounceRates()">
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}%</td>
       </tr>
       </tbody>
     </table>

@@ -1,4 +1,4 @@
-describe 'SessionController', ->
+describe 'SessionsController', ->
   $rootScope = null
   $controller = null
   $httpBackend = null
@@ -10,7 +10,7 @@ describe 'SessionController', ->
     $httpBackend = $injector.get("$httpBackend")
     $rootScope = $injector.get("$rootScope")
     $controller = $injector.get("$controller")
-    $controller('SessionController', {$scope: $rootScope})
+    $controller('SessionsController', {$scope: $rootScope})
   )
 
   afterEach ->
