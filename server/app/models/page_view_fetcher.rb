@@ -6,10 +6,9 @@ class PageViewFetcher
     if page_view && page_view.created_at > 3.hours.ago
       page_view
     else
-      google_analytics_api = V1::GoogleAnalyticsApi.new
-      google_analytics_api.fetch_page_views
+      page_views = V1::GoogleAnalyticsApi::PageViews.new
+      page_views.fetch_page_views
     end
-
   end
 
 end

@@ -1,19 +1,36 @@
 <h1>Analytics Dashboard</h1>
-<div ng-controller="DashboardController" ng-init="fetchPageViews()">
-  <div class="dashboard-element blue">
-    <div class="element-header">
-      <h2>Page Views</h2>
-    </div>
-    <div class="element-body">
-      <h3>{{pageViews.totalsForAllResults["ga:pageviews"]}}</h3>
-      <table>
-        <tbody>
-        <tr ng-repeat="row in sortedPageViews()">
-          <td>{{row[0]}}</td>
-          <td>{{row[1]}}</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="dashboard-element blue" ng-controller="PageViewController"
+     ng-init="fetchPageViews()">
+  <div class="element-header">
+    <h2>Page Views</h2>
+  </div>
+  <div class="element-body">
+    <h3>{{pageViews.totalsForAllResults["ga:pageviews"]}}</h3>
+    <table>
+      <tbody>
+      <tr ng-repeat="row in sortedPageViews()">
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="dashboard-element green" ng-controller="SessionController"
+     ng-init="fetchSessions()">
+  <div class="element-header">
+    <h2>Sessions</h2>
+  </div>
+  <div class="element-body">
+    <h3>{{sessions.totalsForAllResults["ga:sessions"]}}</h3>
+    <table>
+      <tbody>
+      <tr ng-repeat="row in sortedSessions()">
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </div>

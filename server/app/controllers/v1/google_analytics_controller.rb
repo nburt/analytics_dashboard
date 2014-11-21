@@ -6,5 +6,10 @@ module V1
       render json: page_view, status: 200
     end
 
+    def sessions
+      session = SessionFetcher.find_or_fetch
+      render json: session, status: 200
+    end
+
   end
 end

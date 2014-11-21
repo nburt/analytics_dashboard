@@ -1,4 +1,4 @@
-describe 'Dashboard Controller', ->
+describe 'PageViewController', ->
   $rootScope = null
   $controller = null
   $httpBackend = null
@@ -10,7 +10,7 @@ describe 'Dashboard Controller', ->
     $httpBackend = $injector.get("$httpBackend")
     $rootScope = $injector.get("$rootScope")
     $controller = $injector.get("$controller")
-    $controller('DashboardController', {$scope: $rootScope})
+    $controller('PageViewController', {$scope: $rootScope})
   )
 
   afterEach ->
