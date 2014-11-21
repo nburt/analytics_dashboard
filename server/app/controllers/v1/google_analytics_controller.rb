@@ -2,12 +2,12 @@ module V1
   class GoogleAnalyticsController < ApplicationController
 
     def page_views
-      page_view = PageViewFetcher.find_or_fetch
+      page_view = AnalyticsFetcher.page_view
       render json: page_view, status: 200
     end
 
     def sessions
-      session = SessionFetcher.find_or_fetch
+      session = AnalyticsFetcher.session
       render json: session, status: 200
     end
 

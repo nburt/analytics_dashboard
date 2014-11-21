@@ -3,7 +3,7 @@ require 'rails_helper'
 describe V1::GoogleAnalyticsController do
 
   it 'can fetch page views' do
-    VCR.use_cassette('/controllers/v1/google_analaytics/page_views', match_requests_on: [:host, :path, :method]) do
+    VCR.use_cassette('/controllers/v1/google_analytics/page_views', match_requests_on: [:host, :path, :method]) do
       get :page_views
 
       parsed_body = Oj.load(response.body)

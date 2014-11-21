@@ -5,7 +5,7 @@ http_interactions:
     uri: https://accounts.google.com/o/oauth2/token
     body:
       encoding: ASCII-8BIT
-      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIyMDEwODM4NDU3MDAtN2Rxa3ZqcjRkbm1pMDNnZmQ0NTFwY25mMnIwNHJkcDNAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYW5hbHl0aWNzLnJlYWRvbmx5IiwiYXVkIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL3Rva2VuIiwiZXhwIjoxNDE2NTQxNTkwLCJpYXQiOjE0MTY1NDE0NzB9.pmPSrMlLEehl7OIUvf4MLYtBLEOv2AbnkSr5SB2T9dvygljJHIgDujElQ1mOCA9y5TudD1bYgkk5YxbD7GCrVy8aLxsW-7oR36PYJGA4bK3hFYylAH3tLEpRCpqc128lYtqIIa_9Bu48fE3Z6MEYGNzvGjFBlJgnAiqq1HgE9MM
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIyMDEwODM4NDU3MDAtN2Rxa3ZqcjRkbm1pMDNnZmQ0NTFwY25mMnIwNHJkcDNAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYW5hbHl0aWNzLnJlYWRvbmx5IiwiYXVkIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL3Rva2VuIiwiZXhwIjoxNDE2NTQ2NjAzLCJpYXQiOjE0MTY1NDY0ODN9.FedvfKmzDnBOPSRaqsZwiislSd7tC7fSIGUObYusWNf7k3m5HLN5bVmklUIkyiyay1sLsY1f22v_NMgZIAXUt_rT6rb54NKuDjhh58KRhZJB65srfp-wnlnSNTW3tLFy25vvYprGRgs7FxWZoGp25L27lP16n-ZrdwXW_pITqK8
     headers:
       Cache-Control:
       - no-store
@@ -31,7 +31,7 @@ http_interactions:
       Expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       Date:
-      - Fri, 21 Nov 2014 03:45:32 GMT
+      - Fri, 21 Nov 2014 05:09:04 GMT
       Content-Disposition:
       - attachment; filename="json.txt"; filename*=UTF-8''json.txt
       X-Content-Type-Options:
@@ -50,12 +50,12 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "access_token" : "ya29.xQDBGkMdR9UIrMs1MHzNWQJL20bfDyoQy20Fy1AG74UYfv-wvIAsIHSvOAGnLfbJDEBMfQbaw-mLfQ",
+          "access_token" : "ya29.xQDl3Bw4zfY1qzCn0BKBnkBphEXA9Lfy25n3hA_58qMpKZ1EeqJFZT9dS752SAuDCNwCYCKlrMKMmg",
           "token_type" : "Bearer",
           "expires_in" : 3600
         }
     http_version: 
-  recorded_at: Fri, 21 Nov 2014 03:45:31 GMT
+  recorded_at: Fri, 21 Nov 2014 05:09:03 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/analytics/v3/rest
@@ -79,9 +79,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Fri, 21 Nov 2014 03:50:34 GMT
+      - Fri, 21 Nov 2014 05:14:04 GMT
       Date:
-      - Fri, 21 Nov 2014 03:45:34 GMT
+      - Fri, 21 Nov 2014 05:09:04 GMT
       Cache-Control:
       - public, max-age=300, must-revalidate, no-transform
       Etag:
@@ -545,7 +545,7 @@ http_interactions:
         aQ2SrV2JBQDsMNGe9BXwCQXZDW91kUZ/IR0L1WnK1jB2mnJsbrBErNPfI5v5
         Av7//uL/A7+YTYpTLQMA
     http_version: 
-  recorded_at: Fri, 21 Nov 2014 03:45:33 GMT
+  recorded_at: Fri, 21 Nov 2014 05:09:04 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=2014-11-20&ids=ga:83626939&metrics=ga:sessions&start-date=2014-10-22
@@ -562,7 +562,7 @@ http_interactions:
       Content-Type:
       - ''
       Authorization:
-      - Bearer ya29.xQDBGkMdR9UIrMs1MHzNWQJL20bfDyoQy20Fy1AG74UYfv-wvIAsIHSvOAGnLfbJDEBMfQbaw-mLfQ
+      - Bearer ya29.xQDl3Bw4zfY1qzCn0BKBnkBphEXA9Lfy25n3hA_58qMpKZ1EeqJFZT9dS752SAuDCNwCYCKlrMKMmg
       Cache-Control:
       - no-store
       Accept:
@@ -573,9 +573,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Fri, 21 Nov 2014 03:45:34 GMT
+      - Fri, 21 Nov 2014 05:09:05 GMT
       Date:
-      - Fri, 21 Nov 2014 03:45:34 GMT
+      - Fri, 21 Nov 2014 05:09:05 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -617,5 +617,5 @@ http_interactions:
         re0c8kWJnt5Z0hxlCZ64In97a4Kd587SOumWs/XRpLGOSquVZSjZQeFPV+Px
         TVD5KKjsTF7e/gHJtcZX5gQAAA==
     http_version: 
-  recorded_at: Fri, 21 Nov 2014 03:45:33 GMT
+  recorded_at: Fri, 21 Nov 2014 05:09:04 GMT
 recorded_with: VCR 2.9.3

@@ -5,7 +5,7 @@ http_interactions:
     uri: https://accounts.google.com/o/oauth2/token
     body:
       encoding: ASCII-8BIT
-      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIyMDEwODM4NDU3MDAtN2Rxa3ZqcjRkbm1pMDNnZmQ0NTFwY25mMnIwNHJkcDNAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYW5hbHl0aWNzLnJlYWRvbmx5IiwiYXVkIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL3Rva2VuIiwiZXhwIjoxNDE2NTQxNTkzLCJpYXQiOjE0MTY1NDE0NzN9.nSHs162FAKoOE7E2MiC4T2xnWzLxtr3DVbPNmJ6U9OxtstdW7R4h0JwumNGIo9oxC99ZOWYwGV8p06efWdkK9b8aACkKE68jI_guprO26Q5WpesTL0yxTZfG4016iyHuR7G-qfD2p-_MhGvDDd1akUaI-Iz9KYYdS47qUuAdNQA
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIyMDEwODM4NDU3MDAtN2Rxa3ZqcjRkbm1pMDNnZmQ0NTFwY25mMnIwNHJkcDNAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYW5hbHl0aWNzLnJlYWRvbmx5IiwiYXVkIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL3Rva2VuIiwiZXhwIjoxNDE2NTQ2NzU0LCJpYXQiOjE0MTY1NDY2MzR9.lX-PdLZ1743UwWKvD116pu8npTqZbssqZ9i3_AxlUzFIOdiTRksHdun3AYF7709Cu8Qns1xMFVWRkcZWbDI2Btm4Sdzb89wrj0VNT_rFG_ImhkzXFlvPwkPqjxUBjuqm6Tf_SU6TivlPMGvQurvHsFCGVmx1DpUAoU0c3M5f6ko
     headers:
       Cache-Control:
       - no-store
@@ -31,7 +31,7 @@ http_interactions:
       Expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       Date:
-      - Fri, 21 Nov 2014 03:45:34 GMT
+      - Fri, 21 Nov 2014 05:11:35 GMT
       Content-Disposition:
       - attachment; filename="json.txt"; filename*=UTF-8''json.txt
       X-Content-Type-Options:
@@ -50,12 +50,12 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "access_token" : "ya29.xQDrdZgQcaqAL3ftIc_vG6_AuewtOaef8ADWTJIOinM0s4lTubRS9tnWNP6jifguSVt3E80Kn2b35w",
+          "access_token" : "ya29.xQALXTJSMXHIhwbuHV0k3B3oZtnVSxgpnsiNHgitv2AldhABlpi88_NonrYwh_4HhVALzLy8FMIaPQ",
           "token_type" : "Bearer",
           "expires_in" : 3600
         }
     http_version: 
-  recorded_at: Fri, 21 Nov 2014 03:45:33 GMT
+  recorded_at: Fri, 21 Nov 2014 05:11:34 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/analytics/v3/rest
@@ -79,9 +79,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Fri, 21 Nov 2014 03:50:35 GMT
+      - Fri, 21 Nov 2014 05:16:35 GMT
       Date:
-      - Fri, 21 Nov 2014 03:45:35 GMT
+      - Fri, 21 Nov 2014 05:11:35 GMT
       Cache-Control:
       - public, max-age=300, must-revalidate, no-transform
       Etag:
@@ -545,10 +545,10 @@ http_interactions:
         aQ2SrV2JBQDsMNGe9BXwCQXZDW91kUZ/IR0L1WnK1jB2mnJsbrBErNPfI5v5
         Av7//uL/A7+YTYpTLQMA
     http_version: 
-  recorded_at: Fri, 21 Nov 2014 03:45:34 GMT
+  recorded_at: Fri, 21 Nov 2014 05:11:34 GMT
 - request:
     method: get
-    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=2014-11-20&ids=ga:83626939&metrics=ga:sessions&start-date=2014-10-22
+    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=2014-11-20&ids=ga:83626939&metrics=ga:pageviews&start-date=2014-10-22
     body:
       encoding: UTF-8
       string: ''
@@ -562,7 +562,7 @@ http_interactions:
       Content-Type:
       - ''
       Authorization:
-      - Bearer ya29.xQDrdZgQcaqAL3ftIc_vG6_AuewtOaef8ADWTJIOinM0s4lTubRS9tnWNP6jifguSVt3E80Kn2b35w
+      - Bearer ya29.xQALXTJSMXHIhwbuHV0k3B3oZtnVSxgpnsiNHgitv2AldhABlpi88_NonrYwh_4HhVALzLy8FMIaPQ
       Cache-Control:
       - no-store
       Accept:
@@ -573,13 +573,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Fri, 21 Nov 2014 03:45:35 GMT
+      - Fri, 21 Nov 2014 05:11:35 GMT
       Date:
-      - Fri, 21 Nov 2014 03:45:35 GMT
+      - Fri, 21 Nov 2014 05:11:35 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"bQK-aw63jBs5sMUYcj5Z-GshsUs/G124KN2040DNAxNjH5wVrfUQCf4"'
+      - '"bQK-aw63jBs5sMUYcj5Z-GshsUs/i6BOEoYJfPhPWOzu0j0QU36mMR4"'
       Vary:
       - Origin
       - X-Origin
@@ -602,20 +602,20 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAAM1TXW/aQBD8K9FV4ikXf5CmwVJURQ1NkRqKQqo+RHlY7LW5
-        cr5z75YShPLfuwcGTH5B37jZ2Zn17rARC2UKkQkwoNekcv+hgjsgEOdCBXxO
-        1Pgsilar1UVlbaURGuUvcltHh5bobz8quCeq4LMq/E0F2XX/Kr0a9Ae9QtVo
-        vLJmCzdQ4QRo3quRHHcGzKPf1nuewJFkIbxJ4+RSJrFM0x6aooslMo15tj9L
-        dGuRbcSxiYc9tjFl33jA21aekKHOjIwdp9yV9nNyqZ1UZM+iM6x4OW+teX34
-        KrKEmfAqHfqlJmYncRy/sRlh7SfoJiy4A88FWQL9uCcOWAh1+V2Zxf+77sbZ
-        UmkcmdKGpe+fISCdLUKe26WhLXw5SBhOrxhe4WzibIOO1tvSz1u5r8okHMQQ
-        Ov64X+941/F1/HHQT47+Y6jDOW+1PmPy2ZS3e9aGlWDWDtS9LF8gt4ZAGT+F
-        utFYbOlZCdpjqOllbb4hFOjChTfC7BxOI7CjPa2bULobPQzH09GPcYgNi7Xw
-        9OlxNL5nw67GIS3vNB6GzP5yKjAaPw3vh4/i7aVNiP9qHX/pISibE8VMJJ/C
-        5zm7CpM/i4jlLjmW/GumbcWv/vEVzZZKF8pUsl7LUjlPnFTQkk/jeYlMjjtk
-        rwyQA0ngF7Lm3FXoZBPSkkp85UpOQQpkrsH7U9+IEGqJPocG5cwuNa9Wrnj/
-        re0c8kWJnt5Z0hxlCZ64In97a4Kd587SOumWs/XRpLGOSquVZSjZQeFPV+Px
-        TVD5KKjsTF7e/gHJtcZX5gQAAA==
+        H4sIAAAAAAAAAM1TXU/bMBT9K8iT+oTJR4HRSGhCo2OVRle1nfaAeLhNblKv
+        jp3ZDm1V8d933aQk8Av2Fp97zv08ObCNUBlLGCiQeydS+6mAe3DAzpnw+Nq5
+        yiZBsN1uLwqtC4lQCXuR6jJ4kwQvwyAjTVDAF5HZ2wKSm+F1fD0ajgaZKFFZ
+        odURrqDAGbj1oERnSHnCXgRu7cA6MI5TJryNw+iSRyGP4wGqrI9FPA6pub81
+        mj1LDqwTUbedjCgn4RveSqlFgnpNEta12YROjVKobZUlT6zfLXs+b2vTAnHH
+        koiosOMGbS0d0aMwDF+pmsPSztDMSNiA58xpB3J+Io4oEcr8h1Cb/3jhldG5
+        kDhRufZrPz29R3p7hDTVtXJH+HIUERxfE7zF1czoCo3bH0O/7vgpyiN/EuXQ
+        0HS/P/BuwpvwajSMuvpTKP1B76Q8I/LZgtZ71vrVwaptqH9bOkGqlQOh7ALK
+        SmJ2pCc5SIs+JutSfUfI0PgbH5hqKrw3QUNb7isfup88jqeLyc+pNw4la+HF
+        cj6ZPlDBjzkav3xI8jgm+tf3GSbT5fhhPGevz61H7DdtaNQ3qxzep6QdD/2A
+        RvvH0xMLKN+InElfK6kLen3uXsGqFjITquDlnufCWEdmBcnpOJbWSOSoR7ZC
+        gTPAHdgNL8l6BRpeeb/EHHcUSZ1PBTyVYP10Vz2xQyg52hQq5CtdS1ou39IF
+        2rJrSDc5WkequK9aI8/BOorwP1YrX86SMteGm3q1J/plQ6+0cbmWQnfz+v+u
+        xK4PB4UNfJZmrufXf3eUFe7rBAAA
     http_version: 
-  recorded_at: Fri, 21 Nov 2014 03:45:34 GMT
+  recorded_at: Fri, 21 Nov 2014 05:11:35 GMT
 recorded_with: VCR 2.9.3
